@@ -1,4 +1,4 @@
-# Landing-Page-Applus.
+# Landing Page
 Este é um projeto de landing page simples construído usando PHP, HTML e CSS.  
 
 ## Estrutura:  
