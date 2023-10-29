@@ -1,0 +1,303 @@
+/* Importação de fontes (unificadas) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+/* Definições globais */
+*{
+  box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+  background: rgb(12, 12, 12);
+}
+
+/* Estilização do cabeçalho */
+header{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  bottom: 90%;
+  transform: scale(0.9);
+  font-size: 20px;
+}
+
+header h1{
+  font-size: 50px;
+  color: white;
+}
+
+/* Estilização do parágrafo header */
+header p{
+  font-size: 25px;
+}
+
+/* Diagramação e Estilização do avatar */
+header img{
+  position: relative;
+  margin-top: 10%;
+  border-radius: 50%;
+  width: 190px;
+  height: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+  
+/* Estilização do avatar sob o cursor do mouse */
+header img:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
+}
+
+/* Ícones de contato */
+.phone,
+.email,
+.location,
+.linkedin,
+.github{
+  width: 22px;
+  color: black;
+  margin-top: 10px;
+}
+
+/* Estilização e diagramação dos itens do card */
+.card-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #FDD982;
+}
+
+/* Margem para separar os ícones dos títulos */
+.card-info li img {
+  margin-right: 10px;
+}
+
+/* Estilização e diagramação dos ícones de contato */
+.phone,
+.email,
+.location,
+.linkedin,
+.github {
+  width: 22px;    
+  position: relative;
+  bottom: 5px; 
+  color: transparent;
+}
+
+/* Estilização dos links */
+a{
+  font-style: normal;
+}
+
+/* Estilização do link: whatsapp, email, linkedin e github sob o cursor */
+a:hover{
+  cursor: pointer;
+}
+
+/* Estilização das linguagens */
+.html,
+.css,
+.js,
+.php,
+.python,
+.c,
+.sql{
+  width: 40px;
+ }
+
+/* Diagramação e estilização do bloco central */
+ .grid-container {
+    display: grid;
+    grid-template-areas: 'myArea myArea2';
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+  }
+
+/* Diagramação e estilização do bloco esquerdo e direito */
+.grid-item-1, .grid-item-2 {
+  grid-area: myArea myArea2;
+  background-color: rgb(12, 12, 12);
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Estilização dos títulos e sub-títulos */
+h2{
+  color: white;
+  font-size: 35px;
+}
+
+/* Estilização dos parágrafos de cursos */
+.certification, p {
+  color: #FDD982;
+}
+
+/* Diagramação da div para alinhar os elementos horizontalmente */
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Estilização para diminuir o ícone */
+.language img {
+  width: 35px; 
+  margin-right: 10px; 
+}
+
+/* Estilização do texto para alinhar verticalmente com o ícone */
+.language p {
+  margin: 0;
+}
+
+footer{
+  text-align: center;
+  color: #FDD982;
+  margin-top: 20px;
+}
+
+/* Estilização e diagramação do card */
+.card {
+  background: #222e35;
+  width: 250px;
+  height: 270px;
+  position: absolute !important;
+  top: 27%;
+  right: 18%; 
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px rgba(232, 220, 237, 0.2);
+  animation: fadeInRight 1s ease;
+  z-index: 1;
+}
+
+/* Diagramação do contato do card */
+.card address {
+  text-align: center;
+}
+
+/* Diagramação da lista do card */
+.card ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilização da lista do card */
+.card li {
+  font-style: normal;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Diagramação dos ícones do card */
+.card img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* Estilização dos links do card */
+.card a {
+  color: #FDD982;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Diagramação e estilização do card em modo inércia */
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(252, 255, 92), rgb(134, 54, 226));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+
+/* Estilização do background do card */
+.card::after {
+  content: '';
+  position: absolute;
+  background: rgb(37, 34, 34);
+  inset: 5px;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+/* Estilização do card sob cursor com modo reativo */
+.card:hover:before {
+  background-image: linear-gradient(180deg, rgb(1, 46, 248), rgb(246, 124, 9));
+  animation: rotBGimg 3.5s linear infinite;
+}
+
+/* Estilização do efeito do card */
+@keyframes fadeInRight {
+  from {
+      opacity: 0;
+      transform: translateX(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Estilização do efeito do card */
+@keyframes rotBGimg {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+/*--------------------------------------------- MEDIA QUERIES ---------------------------------------------*/
+/* Diagramação e estilização para telas até 995px */
+@media screen and (max-width: 1160px) {
+  /* Diagramação do cabeçalho e do corpo */
+  header, body  {
+    height: 100%;
+  }
+
+  /* Diagramação do cabeçalho */
+  header{
+    width: 100%;
+  }
+
+  /* Diagramação do container principal */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 'myArea';
+    grid-template-columns: 100%;
+  }
+
+  /* Diagramação do bloco da direita */
+  .grid-item-2 {
+    display: grid;
+    grid-template-areas: 'myArea2';
+    grid-template-columns: 100%;
+
+  }
+
+  /* Diagramação do card */
+  .card {
+    position: relative !important;
+    bottom: 15%;
+    margin-top: 180px;
+    left: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
