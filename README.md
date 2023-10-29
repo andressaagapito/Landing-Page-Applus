@@ -12,4 +12,4 @@ Para executar esta landing page, é necessário ter um servidor web configurado 
 Para abrir a landing page no seu navegador web, Clique [aqui](https://andressaagapito.github.io/Landing-Page-PHP/).
 
 
-URL: [https://andressaagapito.github.io/Landing-Page-Applus/]
+URL: [https://andressaagapito.github.io/Landing-Page-PHP/]
